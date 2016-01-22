@@ -1,0 +1,17 @@
+- tests quickly
+- automates his job
+  - use lots of bash aliases
+  - everything in dropbox
+  - automatic slack messages
+
+Shortcuts
+  alt left, right
+  alt delete
+  command left, right
+  command delete
+  command t
+
+Error Debugging
+  1. Find the top error line that looks familiar
+  2. Find file line in your code.
+  3. Stick a debugger right above that line

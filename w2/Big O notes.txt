@@ -1,0 +1,5 @@
+O(1)  : Constant time : doesn't grow as input size grows.
+O(logn): Log time:    : Grows logarithmically
+O(n)  : Linear time   : grows linearly
+O(n^2): Quadratic time: grows quadratically
+O(n!) : Factorial time: grows factorially
