@@ -1,0 +1,46 @@
+
+<%if @cat.persisted?%>
+  <form action="<%= cat_url %>" method="post">
+  <input type="hidden" name="_method" value="PATCH">
+<%else%>
+  <form action="<%= cats_url %>" method="post">
+<%end%>
+    <label for="cat[name]">Name:</label><br>
+    <input id="cat[name]" type="text" name="cat[name]", value= "<%=cat.name %>" />
+<br>
+<br>
+    <label for="cat[sex]" checked="<%=cat.sex%>" >Sex:</label><br>
+    <input id="cat[sex]" type="radio" name="cat[sex]" value= "M" <%= "checked" if cat.sex =='M'%> /> Male<br>
+    <input id="cat[sex]" type="radio" name="cat[sex]" value= "F" <%= "checked" if cat.sex =='F'%> />Female
+<br>
+<br>
+
+    <label for="cat[color]">Color:</label><br>
+    <select name="cat[color]">
+    <option></options>
+    <% Cat::COLORS.each do |color|  %>
+      <option value="<%=color%>"<%= "selected" if cat.color == color%>><%=color%> </options>
+    <% end %>
+
+
+  </select>
+<br>
+
+    <label for="cat[birth_date]">Birthdate:</label><br>
+    <input id="cat[birth_date]" type="date" name="cat[birth_date]" value= "<%=cat.birth_date%>"/>
+    <br>
+
+<br>
+
+    <label for="cat[description]">Description:</label><br>
+    <textarea id="cat[description]" name="cat[description]" rows = "10" cols = "50" ><%=cat.description%></textarea>
+    <br>
+
+
+  <input type="submit" value="Submit!" />
+
+
+
+
+</form>
+<br>

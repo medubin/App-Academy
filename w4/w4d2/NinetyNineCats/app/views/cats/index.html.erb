@@ -1,0 +1,28 @@
+<% Cat.all.each do |cat| %>
+<a href="<%=cat_url(cat)%>"><%=cat.name%> </a>
+<br>
+<% end %>
+
+
+
+
+
+
+
+
+
+
+<!--
+
+<% Cat.all.each do |cat| %>
+<%= cat.name%>
+<br>
+<br>
+<%= "#{cat.age} years old" %>
+<%= cat.sex%>
+<%= cat.color%>
+<br>
+<%= cat.description%>
+<br>
+<br>
+<% end %> -->
