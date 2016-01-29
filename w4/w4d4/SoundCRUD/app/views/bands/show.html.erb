@@ -1,0 +1,16 @@
+<h1> BAND </h1>
+<%= @band.name %>
+<br>
+<br>
+
+<%= button_to "delete", id: @band.id, method: :delete %>
+<!-- <form action= '<%=band_url(@band)%>' method='post'>
+  <input name='authenticity_token'
+         value='<%=form_authenticity_token%>'
+         type=hidden>
+  <input type='hidden' method ='_method' value='delete'>
+  <input type='submit' value='delete!'>
+</form> -->
+<br>
+<br>
+<%= link_to "All Bands",  bands_url  %>

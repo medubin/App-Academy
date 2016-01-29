@@ -1,0 +1,6 @@
+<h1>Tracks!</h1>
+<% Track.all.each do |track| %>
+<%= link_to "#{track.name}", track_url(track) %>
+<br>
+<% end %>
+<br>
