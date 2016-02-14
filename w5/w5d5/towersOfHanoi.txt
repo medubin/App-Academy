@@ -1,0 +1,11 @@
+game starts
+all discs are piled on first position
+check winning condition
+prompt user for move
+parse move
+check move validity
+if valid, make move
+if not won, go to line 4
+
+prototypes:
+  towers
